@@ -28,5 +28,15 @@ const findDocuments = function (db, callback) {
   });
 };
 
+const postOffer = function (document, db, callback) {
+  console.log("Saving offer");
+  const collection = db.collection("offers");
+  collection.insertOne(document, function (err, docs) {
+    assert.equal(err, null);
+    callback(docs.ops[0]);
+  });
+};
+
 exports.getDatabase = getDatabase;
 exports.findDocuments = findDocuments;
+exports.postOffer = postOffer;
