@@ -1,5 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Jobs from "./components/Jobs";
+import Landing from "./components/Landing";
 
-ReactDOM.render(<Jobs />, document.getElementById("root"));
+ReactDOM.render(<Landing />, document.getElementById("root"));
