@@ -22,7 +22,7 @@ const useForm = (schema) => {
           console.log("Success:", inputs);
         })
         .catch((error) => {
-          console.error("Error:", inputs);
+          console.error("Error:", error);
         });
 
       console.log("Form submitted");
